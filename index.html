@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Attendance System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Smart Attendance</h1>
+
+        <input type="text" id="name" placeholder="Enter Student Name">
+
+        <select id="status">
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+        </select>
+
+        <button onclick="markAttendance()">Mark Attendance</button>
+
+        <h3>Attendance Record</h3>
+        <table>
+            <tr>
+                <th>Student Name</th>
+                <th>Status</th>
+            </tr>
+            <tbody id="record"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
